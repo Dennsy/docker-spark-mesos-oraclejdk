@@ -19,7 +19,7 @@ RUN apt-get install -y python libnss3 curl && \
     apt-get autoremove -y
 
 RUN mkdir /opt/spark && \
-    curl http://archive.apache.org/dist/spark/spark-2.0.0/spark-2.0.0-bin-hadoop2.7.tgz \
+    curl http://archive.apache.org/dist/spark/spark-1.5.1/spark-1.5.1-bin-hadoop2.6.tgz \
     | tar --strip-components=1 -xzC /opt/spark && \
     rm -rf /opt/spark/examples
 
